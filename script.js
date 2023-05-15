@@ -24,12 +24,22 @@ console.log(checkIfUsersHaveTheSameName(firstJohn, secondJohn)); // true
 console.log(checkIfUsersHaveTheSameName(firstJohn, adam)); // false
 
 console.log('~~~~~~~~~~Get vote count~~~~~~~~~~')
-function getVoteCount(votesObject){
+function getVoteCount(votesObject) {
     return votesObject.upvotes - votesObject.downvotes;
 }
 
 console.log(getVoteCount({ upvotes: 10, downvotes: 5 })); // 5
 console.log(getVoteCount({ upvotes: 75, downvotes: 90 })); // -15
 console.log(getVoteCount({ upvotes: 50, downvotes: 50 })); // 0
+
+console.log('~~~~~~~~~~Get cube volume~~~~~~~~~~')
+
+function getCubeVolume(cubeDimensions) {
+    return cubeDimensions.width * cubeDimensions.length * cubeDimensions.height;
+}
+
+console.log(getCubeVolume({ width: 10, length: 5, height: 2})); // 100
+console.log(getCubeVolume({ width: 100, length: 500, height: 0})); // 0
+console.log(getCubeVolume({ width: 15, length: 2, height: 5})); // 150
 
 console.log('~~~~~~~~~~The end~~~~~~~~~~')
