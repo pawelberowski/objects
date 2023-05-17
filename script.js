@@ -78,5 +78,23 @@ function describeAnimal(animalObject) {
 console.log(describeAnimal({name:"dog",legs:4,color:"white"})); // "This white dog has 4 legs."
 console.log(describeAnimal({name:"cock",legs:2,color:"red"})); // "This red cock has 2 legs."
 
+console.log('~~~~~~~~~~Rooms kata~~~~~~~~~~')
+
+const rooms = {
+    first: {
+        description: 'This is the first room',
+        items: {
+            chair: 'The old chair looks comfortable',
+            lamp: 'This lamp looks ancient'
+        }
+    },
+    second: {
+        description: 'This is the second room',
+        items: {
+            couch: 'This couch looks like it would hurt your back',
+            table: 'On the table there is an unopened bottle of water'
+        }
+    }
+}
 
 console.log('~~~~~~~~~~The end~~~~~~~~~~')
