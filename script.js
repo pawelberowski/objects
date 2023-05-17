@@ -70,4 +70,13 @@ console.log(newUser.firstName); // John
 console.log(newUser.lastName); // John
 console.log(newUser === john); // false &lt;-- this is crucial
 
+console.log('~~~~~~~~~~Animal kata~~~~~~~~~~')
+
+function describeAnimal(animalObject) {
+    return `This ${animalObject.color} ${animalObject.name} has ${animalObject.legs} legs.`;
+}
+console.log(describeAnimal({name:"dog",legs:4,color:"white"})); // "This white dog has 4 legs."
+console.log(describeAnimal({name:"cock",legs:2,color:"red"})); // "This red cock has 2 legs."
+
+
 console.log('~~~~~~~~~~The end~~~~~~~~~~')
